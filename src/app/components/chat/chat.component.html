@@ -1,0 +1,23 @@
+<!-- Botón para mostrar/ocultar el chat -->
+<button (click)="toggleChat()" id="toggle-button">Chat</button>
+
+<!-- Contenedor del chat -->
+<div *ngIf="showChat" id="chat-container">
+  <div id="header">Chatbot</div>
+  <!-- Aquí puedes eliminar el componente <app-chat> si ya no lo necesitas -->
+  <!-- <app-chat class="app-chat"></app-chat> -->
+  <div class="app-chat">
+    <!-- Puedes agregar contenido aquí si lo deseas -->
+  </div>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <div class="input-container">
+    <!-- Campo de entrada de texto -->
+    <input type="text" placeholder="Escribe un mensaje...">
+    <!-- Botón de enviar -->
+    <button type="button" class="btn btn-outline-secondary">
+      <span class="material-icons">send</span>
+    </button>
+  </div>
+</div>
+
+
